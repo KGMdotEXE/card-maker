@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KGMCardmaker</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./KGMlogo.png" alt="Logo" height="100" width="100" style="border-radius:50%; box-shadow:0 1px 8px rgba(0,0,0,0.10);">
+        <h1>KGMCardmaker</h1>
+        <h2>สร้างการ์ดของคุณเองได้ที่นี่!</h2>
+    </header>
+    <main>
+        <p>เว็บไซต์นี้ใช้สำหรับสร้างการ์ดแบบกำหนดเองในสไตล์ของคุณเอง</p>
+        <h3>วิธีใช้งาน</h3>
+        <form>
+            <label for="Card_type">ประเภทการ์ด</label>
+            <select id="Card_type" name="Card_type" >
+                <option value="none">เลือกประเภท</option>
+                <option value="Mcard">Material card</option>
+                <option value="Icard">Item card</option>
+                <option value="Tcard">Tool card</option>
+                <option value="Acard">Addon card</option>
+            </select>
+            <div id="cardMessage"></div>
+        </form>
+
+        <div id="inputMcard" class="card-section"  >
+            <canvas id="canvasMcard" width="300" height="400"></canvas>
+            <label>Sub type</label>
+            <select id="MsubType" name="subType">
+                <option value="none">none</option>
+                <option value="wood">Wood</option>
+                <option value="metal">Material</option>
+                <option value="gem">Gem</option>
+            </select>
+            <label>Card name</label>
+              <input type="text" id="cardNameM" oninput="drawMcard()"class="cardname">
+            <label>Card detail</label>
+             <textarea id="cardDetailM" rows="4" oninput="drawMcard()" class="cardDetail"></textarea>
+            <label>Quality Point</label>
+            <input type="number" id="QPM"oninput="drawMcard()">
+        </div>
+
+        <div id="inputIcard" class="card-section">
+            <canvas id="canvasIcard" width="300" height="400"></canvas>
+            <label>Sub type</label>
+            <select id="IsubType" name="subType" oninput="drawIcard()">
+            <option value="none">none</option>
+            <option value="sword">Sword</option>
+            <option value="axe">Axe</option>
+            <option value="spaer">Spaer</option>
+            </select>
+            <label>Card name</label>
+            <input type="text" id="cardNameI" oninput="drawIcard()"class="cardname">
+            <label>Card detail</label>
+            <input type="text" id="cardDetailI" oninput="drawIcard()" class="cardDetail">
+            <label>Craft recipes</label>
+            <input type="text" id="craftRecipes" oninput="drawIcard()">
+            <label>Quality Point</label>
+            <input type="number" id="QPI"oninput="drawIcard()">
+            <label>Bonus Point</label>
+            <input type="number" id="BP" oninput="drawIcard()">
+        </div>
+
+        <div id="inputTcard" class="card-section">
+            <canvas id="canvasTcard" width="300" height="400"></canvas>
+            <label>Sub type</label>
+            <select id="TsubType" name="subType" oninput="drawTcard()">
+            <option value="none">none</option>
+            <option value="hamer">Hamer</option>
+            <option value="forge">Forge</option>
+            <option value="book">Book</option>
+            </select>
+            <label>Card name</label>
+            <input type="text" id="cardNameT" oninput="drawTcard()"class="cardname">
+            <label>Card detail</label>
+            <input type="text" id="cardDetailT" oninput="drawTcard()" class="cardDetail">
+            <label>Tool Point</label>
+            <input type="number" id="TP" min="0" max="50" oninput="drawTcard()">
+        </div>
+
+        <div id="inputAcard" class="card-section">
+            <canvas id="canvasAcard" width="300" height="400"></canvas>
+            <label>Card name</label>
+            <input type="text" id="cardNameA" oninput="drawAcard()" class="cardname">
+            <label>Addon detail</label>
+            <input type="text" id="cardDetailA" oninput="drawAcard()" class="cardDetail">
+        </div>
+
+        <a href="./info.html">ข้อมูลของฉัน</a>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: #f7f7fa;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #3a3a5a;
+            color: #fff;
+            padding: 30px 0 10px 0;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        main {
+            max-width: 600px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            padding: 30px 24px;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        h2 {
+            margin-top: 10px;
+            font-weight: 400;
+            color: #555;
+        }
+        p {
+            color: #666;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        label {
+            font-weight: 500;
+            margin-top: 10px;
+            display: block;
+        }
+         .cardname, input[type="number"] {
+            width: 97%;
+            padding: 7px 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+        }
+         
+         .cardDetail{
+            width: 97%;
+            min-height: 80px;
+            padding: 7px 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 1em;
+            resize: vertical;
+        }
+        .card-section {
+            display: none;
+            margin-top: 20px;
+            padding: 18px;
+            background: #f2f2f8;
+            border-radius: 8px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+        }
+        .card-section img {
+            display: block;
+            margin: 0 auto 15px auto;
+            border-radius: 8px;
+            box-shadow: 0 1px 6px rgba(0,0,0,0.08);
+        }
+        #cardMessage {
+            margin-top: 10px;
+            color: #3a3a5a;
+            font-weight: 500;
+        }
+        a {
+            display: inline-block;
+            margin-top: 30px;
+            color: #3a3a5a;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px dashed #3a3a5a;
+        }
+        a:hover {
+            color: #0078d7;
+            border-bottom: 1px solid #0078d7;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #999;
+            font-size: 0.9em;
+        }
+
+@font-face {
+    font-family: 'MedievalSharp';
+    src: url(./MedievalSharp/MedievalSharp-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
